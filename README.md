@@ -1,1 +1,1 @@
-# github-search-react
+# React Github Search UI
