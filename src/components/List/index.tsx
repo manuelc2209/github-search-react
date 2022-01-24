@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Card } from "..";
-import { DataProps } from "../../api/shared";
+import { UserProps } from "../../api/shared";
 
 export interface childProps {
   name: string;
@@ -13,8 +13,9 @@ export interface childProps {
 }
 
 interface ListProps {
-  data: DataProps[];
+  data: UserProps[];
   className?: string;
+  setSelectedUser?: (user: UserProps) => void;
 }
 
 const StyledCard = styled(Card)`
@@ -61,7 +62,7 @@ const StyledBody = styled.div`
   display: flex;
 `;
 
-export const List: React.FC<ListProps> = ({ data, className }) => {
+export const List: React.FC<ListProps> = ({ data, setSelectedUser }) => {
   const [showMore, setShowMore] = useState(false);
   if (!data || data.length === 0) {
     return null;
@@ -75,8 +76,12 @@ export const List: React.FC<ListProps> = ({ data, className }) => {
         <StyledColumn>
           <StyledLabel>{`Results(${data.length})`}</StyledLabel>
           {customFilterList &&
-            customFilterList.map((item: DataProps, index: number) => (
-              <StyledCard user={item} key={`user-${index}`} />
+            customFilterList.map((item: UserProps, index: number) => (
+              <StyledCard
+                user={item}
+                key={`user-${index}`}
+                onClick={(user) => setSelectedUser && setSelectedUser(user)}
+              />
             ))}
         </StyledColumn>
       </StyledBody>

@@ -1,9 +1,9 @@
 export const BASE_PATH = "https://api.github.com";
 
 export interface Data {
-  items: DataProps[];
+  items: UserProps[];
 }
-export interface DataProps {
+export interface UserProps {
   avatar_url?: string;
   events_url?: string;
   followers_url?: string;
