@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { DataProps } from "../../api/shared";
+import { UserProps } from "../../api/shared";
 
 interface CardProps {
-  user: DataProps;
+  user: UserProps;
   className?: string;
+  onClick?: (user: UserProps) => void;
 }
 
 interface StyledSpanProps {
@@ -58,11 +59,14 @@ const StyledSpan = styled.span<StyledSpanProps>`
   border-radius: 17px;
 `;
 
-export const Card: React.FC<CardProps> = ({ user, className }) => {
+export const Card: React.FC<CardProps> = ({ user, className, onClick }) => {
   return (
     <div>
       {user && (
-        <StyledCard className={className}>
+        <StyledCard
+          className={className}
+          onClick={() => onClick && onClick(user.profileData)}
+        >
           <StyledBody>
             {user?.avatar_url && (
               <StyledImage src={user.avatar_url}></StyledImage>

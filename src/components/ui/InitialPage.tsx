@@ -1,11 +1,13 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
-import { Input, List } from "..";
+import { Input, List, UserCard } from "..";
+import { UserProps } from "../../api/shared";
 import { getUserData, buildUserProfile } from "../../api/User";
 
 const ENTER_EVENT_CODE = "ENTER";
 
 export const UIComponent: React.FC = () => {
-  const [userData, setUserData] = useState() as any;
+  const [userData, setUserData] = useState<any[]>();
+  const [selectedUser, setSelectedUser] = useState<UserProps | undefined>();
   const [loading, setLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
   const [value, setValue] = useState("");
@@ -48,19 +50,31 @@ export const UIComponent: React.FC = () => {
         "Loading"
       ) : (
         <>
-          <div>
-            <h1>Search for GitHub Users</h1>
-            <Input
-              value={value}
-              onChange={handleOnChange}
-              onKeyPress={handleOnKeyPress}
-            ></Input>
-          </div>
+          {!selectedUser && (
+            <div>
+              <h1>Search for GitHub Users</h1>
+              <Input
+                value={value}
+                onChange={handleOnChange}
+                onKeyPress={handleOnKeyPress}
+              ></Input>
+            </div>
+          )}
           <>
             {hasError ? (
               <div>Failed to fetch profile</div>
+            ) : userData && !selectedUser ? (
+              <List
+                data={userData}
+                setSelectedUser={(user: UserProps) => setSelectedUser(user)}
+              />
             ) : (
-              userData && <List data={userData} />
+              selectedUser && (
+                <UserCard
+                  user={selectedUser}
+                  onClick={() => setSelectedUser(undefined)}
+                />
+              )
             )}
           </>
           {userData && userData.length === 0 && !hasError && (

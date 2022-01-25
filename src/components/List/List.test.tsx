@@ -1,12 +1,12 @@
 import React from "react";
 import { fireEvent, render } from "@testing-library/react";
 import { List } from "./";
-import { DataProps } from "../../api/shared";
+import { UserProps } from "../../api/shared";
 
 const userData = {
   login: "ads",
   id: 131052,
-  node_id: "MDQ6VXNlcjEzMTA1Mg==",
+  node_id: "33XNlcjEzMTA1Mg==",
   avatar_url: "https://avatars.githubusercontent.com/u/131052?v=4",
   gravatar_id: "",
   url: "https://api.github.com/users/ads",
@@ -39,8 +39,8 @@ const orgData = {
 };
 
 const pushNumber = 5;
-const organizations: Array<DataProps> = [];
-const users: Array<DataProps> = [];
+const organizations: Array<UserProps> = [];
+const users: Array<UserProps> = [];
 for (let i = 0; i < pushNumber; i++) {
   organizations.push(orgData);
   users.push(userData);
