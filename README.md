@@ -2,6 +2,8 @@
 
 # React Github Search UI
 
+#### This repository is being constantly updated based on master at: www.github-search.manuelcorreia.org
+
 The .env file on the root of the project is intentional and optional to change with your github keys, if not changed the rate limit of that specific API may limit some requests.
 
 If clicking on the result of the search is not doing anything is probably because of the rate limit, please either run on a different IP / Configure github .env keys to properly request data without that limitation.
@@ -18,10 +20,6 @@ If clicking on the result of the search is not doing anything is probably becaus
 ☑️ Run on the terminal `yarn && yarn start`
 
 🏁 Project should be running!
-
-
-
-This repository is being constantly updated based on master at: www.github-search.manuelcorreia.org
 
 
 # Improvements roadmap:
