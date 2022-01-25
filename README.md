@@ -2,7 +2,7 @@
 
 # React Github Search UI
 
-#### This repository is being constantly updated based on master at: www.github-search.manuelcorreia.org
+#### This repository is being constantly updated based on master at: https://github-search.manuelcorreia.org
 
 The .env file on the root of the project is intentional and optional to change with your github keys, if not changed the rate limit of that specific API may limit some requests.
 
