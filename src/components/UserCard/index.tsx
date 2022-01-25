@@ -10,11 +10,23 @@ export interface UserCardProps {
 
 const StyledContainer = styled.div`
   min-height: 500px;
-  width: 1000px;
+  width: 300px;
   border: 1px solid white;
   padding: 50px;
   box-sizing: border-box;
   position: relative;
+
+  @media (min-width: 580px) {
+    width: 350px;
+  }
+
+  @media (min-width: 720px) {
+    width: 400px;
+  }
+
+  @media (min-width: 1000px) {
+    width: 750px;
+  }
 `;
 
 const StyledImage = styled.img`
