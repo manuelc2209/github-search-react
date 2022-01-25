@@ -12,9 +12,15 @@ const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 50px;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  @media (min-width: 580px) {
+    padding-top: 0;
+    justify-content: center;
+  }
 `;
 
 function App() {
