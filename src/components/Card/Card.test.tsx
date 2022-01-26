@@ -33,6 +33,6 @@ const userData = {
 };
 
 test("render a card with dummy data", () => {
-  const component = render(<Card user={userData} />);
-  expect(component).toMatchSnapshot();
+  const view = render(<Card user={userData} />);
+  expect(view).toMatchSnapshot();
 });

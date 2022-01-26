@@ -6,33 +6,24 @@ let githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
 export interface userData {}
 
 export async function getUserData(user?: string, url?: string) {
-  try {
-    const res = await fetch(
-      url
-        ? `${url}?client_id=${githubClientId}&client_secret=${githubClientSecret}`
-        : `${BASE_PATH}/search/users?q=${user}&client_id=${githubClientId}&client_secret=${githubClientSecret}`
-    );
+  const res = await fetch(
+    url
+      ? `${url}?client_id=${githubClientId}&client_secret=${githubClientSecret}`
+      : `${BASE_PATH}/search/users?q=${user}&client_id=${githubClientId}&client_secret=${githubClientSecret}`
+  );
 
-    if (!res.ok) {
-      const message = `An error has occured: ${res.status} - ${res.statusText}`;
-      throw new Error(message);
-    }
+  const data = await res.json();
 
-    const data = await res.json();
-
-    const result = {
-      status: res.status,
-      headers: {
-        "Content-Type": res.headers.get("Content-Type"),
-        "Content-Length": res.headers.get("Content-Length"),
-      },
-      length: res.headers.get("Content-Length"),
-      data: data,
-    };
-    return result;
-  } catch (err: any) {
-    return err.message;
-  }
+  const result = {
+    status: res.status,
+    headers: {
+      "Content-Type": res.headers.get("Content-Type"),
+      "Content-Length": res.headers.get("Content-Length"),
+    },
+    length: res.headers.get("Content-Length"),
+    data: data,
+  };
+  return result;
 }
 
 export async function buildUserProfile(data: Data) {
@@ -41,6 +32,7 @@ export async function buildUserProfile(data: Data) {
       return {
         ...item,
         profileData: profileData.data,
+        rateLimited: profileData.status === 403,
       };
     })
   );

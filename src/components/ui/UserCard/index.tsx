@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { UserProps } from "../../api/shared";
-import { Button } from "../Button";
-
-export interface UserCardProps {
-  user: UserProps;
-  onClick?: () => void;
-}
+import { Button } from "../../Button";
 
 const StyledContainer = styled.div`
   min-height: 500px;
@@ -15,6 +10,7 @@ const StyledContainer = styled.div`
   padding: 50px;
   box-sizing: border-box;
   position: relative;
+  text-align: center;
 
   @media (min-width: 580px) {
     width: 350px;
@@ -56,9 +52,12 @@ const StyledButton = styled(Button)`
   right: 25px;
 `;
 
-export const UserCard: React.FC<UserCardProps> = ({ user, onClick }) => {
+export const UserCard: React.FC = () => {
   const [data, setData] = useState<any | undefined>();
   const [loading, setLoading] = useState<boolean>(true);
+  const navigate = useNavigate();
+  const { state } = useLocation();
+  const user = state as any;
 
   useEffect(() => {
     if (user && user.repos_url) {
@@ -100,7 +99,7 @@ export const UserCard: React.FC<UserCardProps> = ({ user, onClick }) => {
           </React.Fragment>
         ))}
       </StyledContent>
-      <StyledButton label="Back" onClick={() => onClick && onClick()} />
+      <StyledButton label="Back" onClick={() => navigate(-1)} />
     </StyledContainer>
   );
 };

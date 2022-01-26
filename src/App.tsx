@@ -17,8 +17,9 @@ const StyledHeader = styled.header`
   font-size: calc(10px + 2vmin);
   color: white;
 
-  @media (min-width: 580px) {
-    padding-top: 0;
+  @media (max-width: 580px) {
+    box-sizing: border-box;
+    padding: 20px 20px 20px 20px;
     justify-content: center;
   }
 `;
