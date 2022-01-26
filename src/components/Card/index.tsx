@@ -12,9 +12,13 @@ interface StyledSpanProps {
   tag?: string;
 }
 
+const setCursor = ({ rateLimited }: { rateLimited?: boolean }) =>
+  rateLimited ? "not-allowed" : "pointer";
+
 const StyledImage = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
 `;
 
 const StyledCard = styled.div`
@@ -23,12 +27,14 @@ const StyledCard = styled.div`
 `;
 
 const StyledBody = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  cursor: pointer;
+  cursor: ${setCursor};
+  height: inherit;
+  width: -webkit-fill-available;
+  text-align: center;
 `;
 
 const StyledTitle = styled.h5`
@@ -65,9 +71,9 @@ export const Card: React.FC<CardProps> = ({ user, className, onClick }) => {
       {user && (
         <StyledCard
           className={className}
-          onClick={() => onClick && onClick(user.profileData)}
+          onClick={() => onClick && onClick(user?.profileData)}
         >
-          <StyledBody>
+          <StyledBody rateLimited={user?.rateLimited}>
             {user?.avatar_url && (
               <StyledImage src={user.avatar_url}></StyledImage>
             )}

@@ -13,6 +13,7 @@ export interface UserProps {
   html_url?: string;
   id?: number;
   login?: string;
+  rateLimited?: boolean;
   node_id?: string;
   organizations_url?: string;
   received_events_url?: string;
