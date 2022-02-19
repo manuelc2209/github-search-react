@@ -11,6 +11,7 @@ const StyledContainer = styled.div`
   box-sizing: border-box;
   position: relative;
   text-align: center;
+  margin: 20px;
 
   @media (min-width: 580px) {
     width: 350px;
@@ -33,7 +34,15 @@ const StyledImage = styled.img`
 
 const StyledContent = styled.div``;
 
-const Styledh5 = styled.h5``;
+const Styledh5 = styled.h5`
+  font-weight: 500;
+`;
+
+const StyledLinkTitle = styled.a`
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+`;
 
 const StyledText = styled.div`
   font-weight: 600;
@@ -52,47 +61,80 @@ const StyledButton = styled(Button)`
   right: 25px;
 `;
 
+const StyledSpan = styled.span`
+  font-size: 14px;
+  width: 200px;
+`;
+
+const StyledTag = styled.span`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  padding: 0 5px;
+  border: 1px solid white;
+  border-radius: 17px;
+`;
+
 export const UserCard: React.FC = () => {
   const [data, setData] = useState<any | undefined>();
   const [loading, setLoading] = useState<boolean>(true);
+  const [rateLimiting, setRateLimiting] = useState<boolean>(true);
   const navigate = useNavigate();
   const { state } = useLocation();
   const user = state as any;
 
   useEffect(() => {
     if (user && user.repos_url) {
-      fetch(user!.repos_url!)
-        .then((response) => response.json())
+      setLoading(true);
+      fetch(user.repos_url)
+        .then((response) => response)
         .then((data) => {
-          setData(data);
-          // Implement Error Logic
-        })
-        .catch((err) => {
-          // Implement Error Logic
-          setData(null);
-        })
-        .finally(() => {
+          if (data.status !== 403) {
+            setRateLimiting(false);
+            setData(data.json());
+            setLoading(false);
+            return;
+          }
+          setRateLimiting(true);
           setLoading(false);
-        });
+        })
+        .catch((err) => console.log(err));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return loading ? (
-    <div>Loading...</div>
+  return rateLimiting || loading ? (
+    rateLimiting ? (
+      <>
+        <div>Rate Limiting reached</div>
+        <br />
+        <div>Please try again later</div>
+      </>
+    ) : (
+      <div>Loading...</div>
+    )
   ) : (
     <StyledContainer>
       <StyledContent>
         <StyledImage src={user.avatar_url} />
-        <Styledh5>{user.login}</Styledh5>
-        <br />
-        <Styledh5>Number of repositories: ({data.length})</Styledh5>
+        <Styledh5>
+          <StyledLinkTitle href={user.html_url} target="_blank">
+            {user.login}
+          </StyledLinkTitle>
+          <StyledTag>{user.type}</StyledTag>
+        </Styledh5>
+        {user && user.company && <span>Company: {user.company}</span>}
+        <StyledSpan>{user.bio}</StyledSpan>
+        <Styledh5>Repositories: ({data?.length})</Styledh5>
         {data.map((repo: { name: string; html_url: string }) => (
           <React.Fragment key={repo.name}>
             <div>
               <StyledText>
                 Link:
-                <StyledLink href={repo!.html_url!}>{repo.name}</StyledLink>
+                <StyledLink href={repo!.html_url!} target="_blank">
+                  {repo.name}
+                </StyledLink>
               </StyledText>
             </div>
             <br />

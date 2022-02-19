@@ -11,6 +11,7 @@ Object {
         <input
           class="sc-gsDKAQ hyAVTD"
           data-testid="StyledInput"
+          placeholder="Search a user or organization"
           value=""
         />
       </div>
@@ -23,6 +24,7 @@ Object {
       <input
         class="sc-gsDKAQ hyAVTD"
         data-testid="StyledInput"
+        placeholder="Search a user or organization"
         value=""
       />
     </div>
@@ -92,6 +94,7 @@ Object {
         <input
           class="sc-gsDKAQ hyAVTD"
           data-testid="StyledInput"
+          placeholder="Search a user or organization"
           value="123123"
         />
       </div>
@@ -104,6 +107,7 @@ Object {
       <input
         class="sc-gsDKAQ hyAVTD"
         data-testid="StyledInput"
+        placeholder="Search a user or organization"
         value="123123"
       />
     </div>
@@ -173,6 +177,7 @@ Object {
         <input
           class="sc-gsDKAQ hyAVTD"
           data-testid="StyledInput"
+          placeholder="Search a user or organization"
           value=""
         />
       </div>
@@ -185,6 +190,7 @@ Object {
       <input
         class="sc-gsDKAQ hyAVTD"
         data-testid="StyledInput"
+        placeholder="Search a user or organization"
         value=""
       />
     </div>
@@ -254,6 +260,7 @@ Object {
         <input
           class="sc-gsDKAQ hyAVTD"
           data-testid="StyledInput"
+          placeholder="Search a user or organization"
           value=""
         />
       </div>
@@ -266,6 +273,7 @@ Object {
       <input
         class="sc-gsDKAQ hyAVTD"
         data-testid="StyledInput"
+        placeholder="Search a user or organization"
         value=""
       />
     </div>
