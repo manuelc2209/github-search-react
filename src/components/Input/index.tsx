@@ -30,6 +30,7 @@ export const Input: React.FC<InputProps> = ({
       <StyledInput
         data-testid="StyledInput"
         value={value}
+        placeholder="Search a user or organization"
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChange && onChange(event)
         }

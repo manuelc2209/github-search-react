@@ -9,7 +9,7 @@ Object {
         class="App"
       >
         <header
-          class="sc-kfPuZi llQmF"
+          class="sc-iwjdpV lhbYkA"
         >
           <div>
             <div>
@@ -22,6 +22,7 @@ Object {
                 <input
                   class="sc-pVTFL lktBfo"
                   data-testid="StyledInput"
+                  placeholder="Search a user or organization"
                   value=""
                 />
               </div>
@@ -39,7 +40,7 @@ Object {
       class="App"
     >
       <header
-        class="sc-kfPuZi llQmF"
+        class="sc-iwjdpV lhbYkA"
       >
         <div>
           <div>
@@ -52,6 +53,7 @@ Object {
               <input
                 class="sc-pVTFL lktBfo"
                 data-testid="StyledInput"
+                placeholder="Search a user or organization"
                 value=""
               />
             </div>
