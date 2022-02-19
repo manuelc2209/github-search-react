@@ -67,13 +67,13 @@ const StyledSpan = styled.span`
 `;
 
 const StyledTag = styled.span`
-  position: absolute;
   bottom: 0;
   left: 0;
   font-size: 12px;
   padding: 0 5px;
   border: 1px solid white;
   border-radius: 17px;
+  align-self: center;
 `;
 
 export const UserCard: React.FC = () => {
@@ -88,11 +88,11 @@ export const UserCard: React.FC = () => {
     if (user && user.repos_url) {
       setLoading(true);
       fetch(user.repos_url)
-        .then((response) => response)
+        .then((response) => response.json())
         .then((data) => {
           if (data.status !== 403) {
             setRateLimiting(false);
-            setData(data.json());
+            setData(data);
             setLoading(false);
             return;
           }
@@ -122,24 +122,26 @@ export const UserCard: React.FC = () => {
           <StyledLinkTitle href={user.html_url} target="_blank">
             {user.login}
           </StyledLinkTitle>
-          <StyledTag>{user.type}</StyledTag>
         </Styledh5>
+        <StyledTag>{user.type}</StyledTag>
+        <br />
         {user && user.company && <span>Company: {user.company}</span>}
         <StyledSpan>{user.bio}</StyledSpan>
-        <Styledh5>Repositories: ({data?.length})</Styledh5>
-        {data.map((repo: { name: string; html_url: string }) => (
-          <React.Fragment key={repo.name}>
-            <div>
-              <StyledText>
-                Link:
-                <StyledLink href={repo!.html_url!} target="_blank">
-                  {repo.name}
-                </StyledLink>
-              </StyledText>
-            </div>
-            <br />
-          </React.Fragment>
-        ))}
+        {data && <Styledh5>Repositories: ({data?.length})</Styledh5>}
+        {data &&
+          data.map((repo: { name: string; html_url: string }) => (
+            <React.Fragment key={repo.name}>
+              <div>
+                <StyledText>
+                  Link:
+                  <StyledLink href={repo!.html_url!} target="_blank">
+                    {repo.name}
+                  </StyledLink>
+                </StyledText>
+              </div>
+              <br />
+            </React.Fragment>
+          ))}
       </StyledContent>
       <StyledButton label="Back" onClick={() => navigate(-1)} />
     </StyledContainer>
