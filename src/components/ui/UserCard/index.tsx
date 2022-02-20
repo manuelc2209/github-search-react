@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { getUserData } from "../../../api/User";
 import { Button } from "../../Button";
 
 const StyledContainer = styled.div`
@@ -47,12 +48,13 @@ const StyledLinkTitle = styled.a`
 const StyledText = styled.div`
   font-weight: 600;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const StyledLink = styled.a`
   font-size: 16px;
-  color: white;
-  padding-left: 20px;
+  color: orange;
 `;
 
 const StyledButton = styled(Button)`
@@ -66,14 +68,51 @@ const StyledSpan = styled.span`
   width: 200px;
 `;
 
-const StyledTag = styled.span`
-  bottom: 0;
-  left: 0;
+const StyledProfile = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+`;
+
+const StyledRepositories = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  font-size: 14px;
+`;
+
+const StyledSubInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const StyledSubSpan = styled.span`
+  font-size: 14px;
+`;
+
+const StyledProject = styled.div`
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+`;
+
+const StyledProjectContainer = styled.div`
+  width: 260px;
+  text-align: center;
+  padding-top: 20px;
+  align-self: stretch;
+  background: #1d1d1d;
+`;
+
+const StyledTopics = styled.div`
   font-size: 12px;
-  padding: 0 5px;
-  border: 1px solid white;
-  border-radius: 17px;
-  align-self: center;
 `;
 
 export const UserCard: React.FC = () => {
@@ -87,12 +126,12 @@ export const UserCard: React.FC = () => {
   useEffect(() => {
     if (user && user.repos_url) {
       setLoading(true);
-      fetch(user.repos_url)
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.status !== 403) {
+      getUserData(undefined, user.repos_url)
+        .then((response) => response)
+        .then(async (resp) => {
+          if (resp && resp.status !== 403) {
             setRateLimiting(false);
-            setData(data);
+            setData(await resp.data);
             setLoading(false);
             return;
           }
@@ -117,32 +156,61 @@ export const UserCard: React.FC = () => {
   ) : (
     <StyledContainer>
       <StyledContent>
-        <StyledImage src={user.avatar_url} />
-        <Styledh5>
-          <StyledLinkTitle href={user.html_url} target="_blank">
-            {user.login}
-          </StyledLinkTitle>
-        </Styledh5>
-        <StyledTag>{user.type}</StyledTag>
-        <br />
+        <StyledProfile>
+          <StyledImage src={user.avatar_url} />
+          <Styledh5>
+            <div>{user.name}</div>
+            <StyledLinkTitle href={user.html_url} target="_blank">
+              @{user.login}
+            </StyledLinkTitle>
+            <StyledSubInfo>
+              {user && user.location && (
+                <StyledSubSpan>Location: {user.location}</StyledSubSpan>
+              )}
+              {user && (
+                <StyledSubSpan>
+                  Organization: {user.organization || "none"}
+                </StyledSubSpan>
+              )}
+            </StyledSubInfo>
+          </Styledh5>
+          <StyledRepositories>
+            <div>Total Repositories:</div>
+            <div>({data.length})</div>
+          </StyledRepositories>
+        </StyledProfile>
         {user && user.company && <span>Company: {user.company}</span>}
         <br />
         <StyledSpan>{user.bio}</StyledSpan>
-        {data && <Styledh5>Repositories: ({data?.length})</Styledh5>}
-        {data &&
-          data.map((repo: { name: string; html_url: string }) => (
-            <React.Fragment key={repo.name}>
-              <div>
-                <StyledText>
-                  Link:
-                  <StyledLink href={repo!.html_url!} target="_blank">
-                    {repo.name}
-                  </StyledLink>
-                </StyledText>
-              </div>
-              <br />
-            </React.Fragment>
-          ))}
+        {data && data.length && (
+          <Styledh5>Repositories: ({data.length})</Styledh5>
+        )}
+        <StyledProject>
+          {data &&
+            data.map(
+              (repo: { name: string; html_url: string; topics: string[] }) => (
+                <StyledProjectContainer key={repo.name}>
+                  <div>
+                    <StyledText>
+                      <StyledLink href={repo!.html_url!} target="_blank">
+                        {repo.name}
+                      </StyledLink>
+                      <br />
+                      Topics:
+                      {repo.topics &&
+                        repo.topics.map((entry) => (
+                          <StyledTopics>{entry}</StyledTopics>
+                        ))}
+                      {repo.topics.length === 0 && (
+                        <StyledTopics>N/A</StyledTopics>
+                      )}
+                    </StyledText>
+                  </div>
+                  <br />
+                </StyledProjectContainer>
+              )
+            )}
+        </StyledProject>
       </StyledContent>
       <StyledButton label="Back" onClick={() => navigate(-1)} />
     </StyledContainer>

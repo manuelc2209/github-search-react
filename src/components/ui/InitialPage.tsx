@@ -1,9 +1,22 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Input } from "..";
+import styled from "styled-components";
+import { Button, Input } from "..";
 import { getUserData, buildUserProfile } from "../../api/User";
 
 const ENTER_EVENT_CODE = 13;
+
+const StyledButton = styled(Button)`
+  background-color: orange;
+  color: white;
+  width: 18.75rem;
+`;
+
+const StyledInputContainer = styled.div`
+  justify-content: center;
+`;
+
+const StyledInput = styled(Input)``;
 
 export const UIComponent: React.FC = () => {
   const [userData, setUserData] = useState<any[]>();
@@ -38,6 +51,19 @@ export const UIComponent: React.FC = () => {
     return;
   };
 
+  const handleSearch = async () => {
+    const res = await getUserData(value);
+    if (res && (res.status === 404 || res.status === 403)) {
+      setHasError(true);
+      setLoading(false);
+    }
+    if (res && res.data && res.status === 200) {
+      const userData = await buildUserProfile(res.data);
+      setUserData(userData);
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     if (userData && userData.length > 0) {
       setLoading(false);
@@ -47,14 +73,14 @@ export const UIComponent: React.FC = () => {
   }, [userData]);
 
   const findUser = (
-    <div>
+    <StyledInputContainer>
       <h1>Search for GitHub Users</h1>
-      <Input
+      <StyledInput
         value={value}
         onChange={handleOnChange}
         onKeyPress={handleOnKeyPress}
-      ></Input>
-    </div>
+      ></StyledInput>
+    </StyledInputContainer>
   );
 
   return (
@@ -68,9 +94,7 @@ export const UIComponent: React.FC = () => {
           {userData && userData.length === 0 && !hasError && (
             <div>User not found</div>
           )}
-          {!userData && !hasError && (
-            <div>Enter a login, name or company you are looking for</div>
-          )}
+          <StyledButton label="Search" onClick={() => handleSearch()} />
         </>
       )}
     </div>

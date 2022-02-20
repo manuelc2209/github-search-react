@@ -33,7 +33,7 @@ const StyledBody = styled.div`
   position: relative;
   cursor: ${setCursor};
   height: inherit;
-  width: -webkit-fill-available;
+  width: 100%;
   text-align: center;
 `;
 

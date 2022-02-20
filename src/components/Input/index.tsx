@@ -8,15 +8,18 @@ interface InputProps {
   onKeyPress?: (ev: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
-const StyledWrapper = styled.div`
-  display: flex;
-  flex: 1;
-`;
 const StyledInput = styled.input`
-  height: 50px;
-  width: 100%;
-  border-radius: 7px;
-  padding: 0 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-image: initial;
+  border-bottom: 4px solid orange;
+  background: none;
+  color: rgb(255, 255, 255);
+  width: 18.75rem;
+  margin-bottom: 3.12rem;
+  padding-bottom: 0.75rem;
+  outline: none;
 `;
 
 export const Input: React.FC<InputProps> = ({
@@ -26,19 +29,17 @@ export const Input: React.FC<InputProps> = ({
   onKeyPress,
 }) => {
   return (
-    <StyledWrapper>
-      <StyledInput
-        data-testid="StyledInput"
-        value={value}
-        placeholder="Search a user or organization"
-        onChange={(event: ChangeEvent<HTMLInputElement>) =>
-          onChange && onChange(event)
-        }
-        onKeyPress={(event: React.KeyboardEvent<HTMLInputElement>) =>
-          value && onKeyPress && onKeyPress(event)
-        }
-        className={className}
-      />
-    </StyledWrapper>
+    <StyledInput
+      data-testid="StyledInput"
+      value={value}
+      placeholder="Search a user or organization"
+      onChange={(event: ChangeEvent<HTMLInputElement>) =>
+        onChange && onChange(event)
+      }
+      onKeyPress={(event: React.KeyboardEvent<HTMLInputElement>) =>
+        value && onKeyPress && onKeyPress(event)
+      }
+      className={className}
+    />
   );
 };

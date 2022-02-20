@@ -9,27 +9,28 @@ Object {
         class="App"
       >
         <header
-          class="sc-iwjdpV lhbYkA"
+          class="sc-ikJyIC jiKUqc"
         >
           <div>
-            <div>
+            <div
+              class="sc-bYoBSM hQXPbr"
+            >
               <h1>
                 Search for GitHub Users
               </h1>
-              <div
-                class="sc-furwcr jrFWNp"
-              >
-                <input
-                  class="sc-pVTFL lktBfo"
-                  data-testid="StyledInput"
-                  placeholder="Search a user or organization"
-                  value=""
-                />
-              </div>
+              <input
+                class="sc-furwcr fhNqOK sc-kLwhqv"
+                data-testid="StyledInput"
+                placeholder="Search a user or organization"
+                value=""
+              />
             </div>
-            <div>
-              Enter a login, name or company you are looking for
-            </div>
+            <button
+              class="sc-ksdxgE bXmQQx sc-ezbkAF hZrTtu"
+              data-testid="StyledButton"
+            >
+              Search
+            </button>
           </div>
         </header>
       </div>
@@ -40,27 +41,28 @@ Object {
       class="App"
     >
       <header
-        class="sc-iwjdpV lhbYkA"
+        class="sc-ikJyIC jiKUqc"
       >
         <div>
-          <div>
+          <div
+            class="sc-bYoBSM hQXPbr"
+          >
             <h1>
               Search for GitHub Users
             </h1>
-            <div
-              class="sc-furwcr jrFWNp"
-            >
-              <input
-                class="sc-pVTFL lktBfo"
-                data-testid="StyledInput"
-                placeholder="Search a user or organization"
-                value=""
-              />
-            </div>
+            <input
+              class="sc-furwcr fhNqOK sc-kLwhqv"
+              data-testid="StyledInput"
+              placeholder="Search a user or organization"
+              value=""
+            />
           </div>
-          <div>
-            Enter a login, name or company you are looking for
-          </div>
+          <button
+            class="sc-ksdxgE bXmQQx sc-ezbkAF hZrTtu"
+            data-testid="StyledButton"
+          >
+            Search
+          </button>
         </div>
       </header>
     </div>

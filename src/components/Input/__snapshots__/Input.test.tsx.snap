@@ -5,29 +5,21 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdvvtL knGZck"
-      >
-        <input
-          class="sc-gsDKAQ hyAVTD"
-          data-testid="StyledInput"
-          placeholder="Search a user or organization"
-          value=""
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bdvvtL knGZck"
-    >
       <input
-        class="sc-gsDKAQ hyAVTD"
+        class="sc-bdvvtL eKvEKn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
       />
     </div>
+  </body>,
+  "container": <div>
+    <input
+      class="sc-bdvvtL eKvEKn"
+      data-testid="StyledInput"
+      placeholder="Search a user or organization"
+      value=""
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -88,29 +80,21 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdvvtL knGZck"
-      >
-        <input
-          class="sc-gsDKAQ hyAVTD"
-          data-testid="StyledInput"
-          placeholder="Search a user or organization"
-          value="123123"
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bdvvtL knGZck"
-    >
       <input
-        class="sc-gsDKAQ hyAVTD"
+        class="sc-bdvvtL eKvEKn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value="123123"
       />
     </div>
+  </body>,
+  "container": <div>
+    <input
+      class="sc-bdvvtL eKvEKn"
+      data-testid="StyledInput"
+      placeholder="Search a user or organization"
+      value="123123"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -171,29 +155,21 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdvvtL knGZck"
-      >
-        <input
-          class="sc-gsDKAQ hyAVTD"
-          data-testid="StyledInput"
-          placeholder="Search a user or organization"
-          value=""
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bdvvtL knGZck"
-    >
       <input
-        class="sc-gsDKAQ hyAVTD"
+        class="sc-bdvvtL eKvEKn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
       />
     </div>
+  </body>,
+  "container": <div>
+    <input
+      class="sc-bdvvtL eKvEKn"
+      data-testid="StyledInput"
+      placeholder="Search a user or organization"
+      value=""
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -254,29 +230,21 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdvvtL knGZck"
-      >
-        <input
-          class="sc-gsDKAQ hyAVTD"
-          data-testid="StyledInput"
-          placeholder="Search a user or organization"
-          value=""
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bdvvtL knGZck"
-    >
       <input
-        class="sc-gsDKAQ hyAVTD"
+        class="sc-bdvvtL eKvEKn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
       />
     </div>
+  </body>,
+  "container": <div>
+    <input
+      class="sc-bdvvtL eKvEKn"
+      data-testid="StyledInput"
+      placeholder="Search a user or organization"
+      value=""
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

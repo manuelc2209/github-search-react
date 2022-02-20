@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   display: flex;
   flex: 1;
   width: 100%;
-  background-color: #282c34;
+  background-color: #232324;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
   padding-top: 50px;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: orange;
 
   @media (max-width: 580px) {
     box-sizing: border-box;
