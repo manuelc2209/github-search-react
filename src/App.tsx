@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
   padding-top: 50px;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: orange;
+  color: #ffffff;
 
   @media (max-width: 580px) {
     box-sizing: border-box;

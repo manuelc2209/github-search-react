@@ -29,7 +29,7 @@ const StyledList = styled.div`
   padding-top: 50px;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: orange;
+  color: #ffffff;
   flex: 1;
 
   @media (max-width: 580px) {
@@ -60,9 +60,11 @@ const StyledLabel = styled.span`
 `;
 
 const StyledButton = styled.button`
-  background-color: orange;
+  background-color: #ffffff;
   border: 1px solid lightgrey;
-  color: white;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
   height: 40px;
   border-radius: 7px;
   cursor: pointer;

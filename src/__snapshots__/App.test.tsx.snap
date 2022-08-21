@@ -9,7 +9,7 @@ Object {
         class="App"
       >
         <header
-          class="sc-ikJyIC jiKUqc"
+          class="sc-ikJyIC ipOtyb"
         >
           <div>
             <div
@@ -19,14 +19,14 @@ Object {
                 Search for GitHub Users
               </h1>
               <input
-                class="sc-furwcr fhNqOK sc-kLwhqv"
+                class="sc-furwcr fbTJnO sc-kLwhqv"
                 data-testid="StyledInput"
                 placeholder="Search a user or organization"
                 value=""
               />
             </div>
             <button
-              class="sc-ksdxgE bXmQQx sc-ezbkAF hZrTtu"
+              class="sc-ksdxgE eucKTn sc-ezbkAF fjZejr"
               data-testid="StyledButton"
             >
               Search
@@ -41,7 +41,7 @@ Object {
       class="App"
     >
       <header
-        class="sc-ikJyIC jiKUqc"
+        class="sc-ikJyIC ipOtyb"
       >
         <div>
           <div
@@ -51,14 +51,14 @@ Object {
               Search for GitHub Users
             </h1>
             <input
-              class="sc-furwcr fhNqOK sc-kLwhqv"
+              class="sc-furwcr fbTJnO sc-kLwhqv"
               data-testid="StyledInput"
               placeholder="Search a user or organization"
               value=""
             />
           </div>
           <button
-            class="sc-ksdxgE bXmQQx sc-ezbkAF hZrTtu"
+            class="sc-ksdxgE eucKTn sc-ezbkAF fjZejr"
             data-testid="StyledButton"
           >
             Search

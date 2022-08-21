@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL eKvEKn"
+        class="sc-bdvvtL jiLJpj"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
@@ -15,7 +15,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL eKvEKn"
+      class="sc-bdvvtL jiLJpj"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value=""
@@ -81,7 +81,7 @@ Object {
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL eKvEKn"
+        class="sc-bdvvtL jiLJpj"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value="123123"
@@ -90,7 +90,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL eKvEKn"
+      class="sc-bdvvtL jiLJpj"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value="123123"
@@ -156,7 +156,7 @@ Object {
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL eKvEKn"
+        class="sc-bdvvtL jiLJpj"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
@@ -165,7 +165,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL eKvEKn"
+      class="sc-bdvvtL jiLJpj"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value=""
@@ -231,7 +231,7 @@ Object {
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL eKvEKn"
+        class="sc-bdvvtL jiLJpj"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
@@ -240,7 +240,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL eKvEKn"
+      class="sc-bdvvtL jiLJpj"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value=""
