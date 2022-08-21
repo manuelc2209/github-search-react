@@ -42,7 +42,7 @@ const Styledh5 = styled.h5`
 const StyledLinkTitle = styled.a`
   font-size: 24px;
   font-weight: 600;
-  color: white;
+  color: #d9eef3;
 `;
 
 const StyledText = styled.div`
@@ -54,7 +54,7 @@ const StyledText = styled.div`
 
 const StyledLink = styled.a`
   font-size: 16px;
-  color: orange;
+  color: #d9eef3;
 `;
 
 const StyledButton = styled(Button)`

@@ -7,8 +7,10 @@ import { getUserData, buildUserProfile } from "../../api/User";
 const ENTER_EVENT_CODE = 13;
 
 const StyledButton = styled(Button)`
-  background-color: orange;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  font-size: 18px;
   width: 18.75rem;
 `;
 
