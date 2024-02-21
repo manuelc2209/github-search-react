@@ -8,7 +8,6 @@ The .env file on the root of the project is intentional and optional to change w
 
 If clicking on the result of the search is not doing anything is probably because of the rate limit, please either run on a different IP / Configure github .env keys to properly request data without that limitation.
 
-
 # To run this project, simply:
 
 ☑️ Have Node / Git installed
@@ -21,12 +20,13 @@ If clicking on the result of the search is not doing anything is probably becaus
 
 🏁 Project should be running!
 
-
 # Improvements roadmap:
-- Better code testing;
-- Code Coverage;
-- More strict TS types;
-- Refactor UI / Code cleanup;
+
+-   Better code testing;
+-   Code Coverage;
+-   More strict TS types;
+-   Refactor UI / Code cleanup;
 
 # Developed By:
+
 Manuel Correia
