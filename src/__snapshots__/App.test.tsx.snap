@@ -6,27 +6,27 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="App"
+        class="sc-gKclnd ikQGlh"
       >
         <header
-          class="sc-ikJyIC ipOtyb"
+          class="sc-jRQBWg bKgjgt"
         >
           <div>
             <div
-              class="sc-bYoBSM hQXPbr"
+              class="sc-hKwDye btbbDD"
             >
               <h1>
                 Search for GitHub Users
               </h1>
               <input
-                class="sc-furwcr fbTJnO sc-kLwhqv"
+                class="sc-gsDKAQ bWlTSq sc-eCImPb"
                 data-testid="StyledInput"
                 placeholder="Search a user or organization"
                 value=""
               />
             </div>
             <button
-              class="sc-ksdxgE eucKTn sc-ezbkAF fjZejr"
+              class="sc-bdvvtL fmDaez sc-dkPtRN ugLOt"
               data-testid="StyledButton"
             >
               Search
@@ -38,27 +38,27 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="App"
+      class="sc-gKclnd ikQGlh"
     >
       <header
-        class="sc-ikJyIC ipOtyb"
+        class="sc-jRQBWg bKgjgt"
       >
         <div>
           <div
-            class="sc-bYoBSM hQXPbr"
+            class="sc-hKwDye btbbDD"
           >
             <h1>
               Search for GitHub Users
             </h1>
             <input
-              class="sc-furwcr fbTJnO sc-kLwhqv"
+              class="sc-gsDKAQ bWlTSq sc-eCImPb"
               data-testid="StyledInput"
               placeholder="Search a user or organization"
               value=""
             />
           </div>
           <button
-            class="sc-ksdxgE eucKTn sc-ezbkAF fjZejr"
+            class="sc-bdvvtL fmDaez sc-dkPtRN ugLOt"
             data-testid="StyledButton"
           >
             Search
