@@ -1,32 +1,32 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`render a card with dummy data 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div>
         <div
-          class="sc-gsDKAQ cFOpLH"
+          class="sc-gsDKAQ dyUBFz"
         >
           <div
-            class="sc-dkPtRN YIfx"
+            class="sc-dkPtRN eRChMt"
           >
             <img
-              class="sc-bdvvtL iIDZas"
+              class="sc-bdvvtL gBGulg"
               src="https://avatars.githubusercontent.com/u/131052?v=4"
             />
             <div
-              class="sc-jRQBWg iANpjD"
+              class="sc-jRQBWg jkXqUj"
             >
               <h5
-                class="sc-hKwDye hWhLRG"
+                class="sc-hKwDye kAeICC"
               >
                 Name: 
                 asd
               </h5>
               <h6
-                class="sc-eCImPb hcWkvY"
+                class="sc-eCImPb hezmhQ"
               >
                 User Email: 
                 a@email.com
@@ -36,14 +36,14 @@ Object {
                 ads
               </h6>
               <p
-                class="sc-gKclnd gefYSt"
+                class="sc-gKclnd wRXud"
               >
                 Company: 
                 home
               </p>
             </div>
             <span
-              class="sc-iCfMLu iGnodU"
+              class="sc-iCfMLu ipwylU"
             >
               User
             </span>
@@ -55,26 +55,26 @@ Object {
   "container": <div>
     <div>
       <div
-        class="sc-gsDKAQ cFOpLH"
+        class="sc-gsDKAQ dyUBFz"
       >
         <div
-          class="sc-dkPtRN YIfx"
+          class="sc-dkPtRN eRChMt"
         >
           <img
-            class="sc-bdvvtL iIDZas"
+            class="sc-bdvvtL gBGulg"
             src="https://avatars.githubusercontent.com/u/131052?v=4"
           />
           <div
-            class="sc-jRQBWg iANpjD"
+            class="sc-jRQBWg jkXqUj"
           >
             <h5
-              class="sc-hKwDye hWhLRG"
+              class="sc-hKwDye kAeICC"
             >
               Name: 
               asd
             </h5>
             <h6
-              class="sc-eCImPb hcWkvY"
+              class="sc-eCImPb hezmhQ"
             >
               User Email: 
               a@email.com
@@ -84,14 +84,14 @@ Object {
               ads
             </h6>
             <p
-              class="sc-gKclnd gefYSt"
+              class="sc-gKclnd wRXud"
             >
               Company: 
               home
             </p>
           </div>
           <span
-            class="sc-iCfMLu iGnodU"
+            class="sc-iCfMLu ipwylU"
           >
             User
           </span>

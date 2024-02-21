@@ -1,12 +1,12 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`render an Input Component 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL jiLJpj"
+        class="sc-bdvvtL ksYWwn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
@@ -15,7 +15,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL jiLJpj"
+      class="sc-bdvvtL ksYWwn"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value=""
@@ -76,12 +76,12 @@ Object {
 `;
 
 exports[`render an Input with a custom value 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL jiLJpj"
+        class="sc-bdvvtL ksYWwn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value="123123"
@@ -90,7 +90,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL jiLJpj"
+      class="sc-bdvvtL ksYWwn"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value="123123"
@@ -151,12 +151,12 @@ Object {
 `;
 
 exports[`render an Input with the change mocked callbacks 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL jiLJpj"
+        class="sc-bdvvtL ksYWwn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
@@ -165,7 +165,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL jiLJpj"
+      class="sc-bdvvtL ksYWwn"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value=""
@@ -226,12 +226,12 @@ Object {
 `;
 
 exports[`render an Input with the keypress mocked callbacks 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <input
-        class="sc-bdvvtL jiLJpj"
+        class="sc-bdvvtL ksYWwn"
         data-testid="StyledInput"
         placeholder="Search a user or organization"
         value=""
@@ -240,7 +240,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bdvvtL jiLJpj"
+      class="sc-bdvvtL ksYWwn"
       data-testid="StyledInput"
       placeholder="Search a user or organization"
       value=""

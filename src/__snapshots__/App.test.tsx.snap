@@ -1,32 +1,32 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Should render the app 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="App"
+        class="sc-iCfMLu ihZyvU"
       >
         <header
-          class="sc-ikJyIC ipOtyb"
+          class="sc-gKclnd cNFuJn"
         >
           <div>
             <div
-              class="sc-bYoBSM hQXPbr"
+              class="sc-eCImPb hrwnFr"
             >
               <h1>
                 Search for GitHub Users
               </h1>
               <input
-                class="sc-furwcr fbTJnO sc-kLwhqv"
+                class="sc-gsDKAQ bWlTSq sc-jRQBWg"
                 data-testid="StyledInput"
                 placeholder="Search a user or organization"
                 value=""
               />
             </div>
             <button
-              class="sc-ksdxgE eucKTn sc-ezbkAF fjZejr"
+              class="sc-bdvvtL fmDaez sc-dkPtRN ugLOt"
               data-testid="StyledButton"
             >
               Search
@@ -38,27 +38,27 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="App"
+      class="sc-iCfMLu ihZyvU"
     >
       <header
-        class="sc-ikJyIC ipOtyb"
+        class="sc-gKclnd cNFuJn"
       >
         <div>
           <div
-            class="sc-bYoBSM hQXPbr"
+            class="sc-eCImPb hrwnFr"
           >
             <h1>
               Search for GitHub Users
             </h1>
             <input
-              class="sc-furwcr fbTJnO sc-kLwhqv"
+              class="sc-gsDKAQ bWlTSq sc-jRQBWg"
               data-testid="StyledInput"
               placeholder="Search a user or organization"
               value=""
             />
           </div>
           <button
-            class="sc-ksdxgE eucKTn sc-ezbkAF fjZejr"
+            class="sc-bdvvtL fmDaez sc-dkPtRN ugLOt"
             data-testid="StyledButton"
           >
             Search

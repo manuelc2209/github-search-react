@@ -1,12 +1,12 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`render an Button Component 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdvvtL emNPPf"
+        class="sc-bdvvtL fmDaez"
         data-testid="StyledButton"
       >
         test
@@ -15,7 +15,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdvvtL emNPPf"
+      class="sc-bdvvtL fmDaez"
       data-testid="StyledButton"
     >
       test
@@ -76,12 +76,12 @@ Object {
 `;
 
 exports[`render an Button with a custom value 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdvvtL emNPPf"
+        class="sc-bdvvtL fmDaez"
         data-testid="StyledButton"
       >
         test
@@ -90,7 +90,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdvvtL emNPPf"
+      class="sc-bdvvtL fmDaez"
       data-testid="StyledButton"
     >
       test
