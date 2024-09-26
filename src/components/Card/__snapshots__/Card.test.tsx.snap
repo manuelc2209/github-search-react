@@ -7,26 +7,26 @@ exports[`render a card with dummy data 1`] = `
     <div>
       <div>
         <div
-          class="sc-gsDKAQ dyUBFz"
+          class="sc-gEvEer cWcOBp"
         >
           <div
-            class="sc-dkPtRN eRChMt"
+            class="sc-eqUAAy dHOlDZ"
           >
             <img
-              class="sc-bdvvtL gBGulg"
+              class="sc-aXZVg hOybyn"
               src="https://avatars.githubusercontent.com/u/131052?v=4"
             />
             <div
-              class="sc-jRQBWg jkXqUj"
+              class="sc-iGgWBj gnmhnl"
             >
               <h5
-                class="sc-hKwDye kAeICC"
+                class="sc-fqkvVR jkfviT"
               >
                 Name: 
                 asd
               </h5>
               <h6
-                class="sc-eCImPb hezmhQ"
+                class="sc-dcJsrY iWRpLS"
               >
                 User Email: 
                 a@email.com
@@ -36,14 +36,14 @@ exports[`render a card with dummy data 1`] = `
                 ads
               </h6>
               <p
-                class="sc-gKclnd wRXud"
+                class="sc-gsFSXq crWHRf"
               >
                 Company: 
                 home
               </p>
             </div>
             <span
-              class="sc-iCfMLu ipwylU"
+              class="sc-kAyceB jkPlHY"
             >
               User
             </span>
@@ -55,26 +55,26 @@ exports[`render a card with dummy data 1`] = `
   "container": <div>
     <div>
       <div
-        class="sc-gsDKAQ dyUBFz"
+        class="sc-gEvEer cWcOBp"
       >
         <div
-          class="sc-dkPtRN eRChMt"
+          class="sc-eqUAAy dHOlDZ"
         >
           <img
-            class="sc-bdvvtL gBGulg"
+            class="sc-aXZVg hOybyn"
             src="https://avatars.githubusercontent.com/u/131052?v=4"
           />
           <div
-            class="sc-jRQBWg jkXqUj"
+            class="sc-iGgWBj gnmhnl"
           >
             <h5
-              class="sc-hKwDye kAeICC"
+              class="sc-fqkvVR jkfviT"
             >
               Name: 
               asd
             </h5>
             <h6
-              class="sc-eCImPb hezmhQ"
+              class="sc-dcJsrY iWRpLS"
             >
               User Email: 
               a@email.com
@@ -84,14 +84,14 @@ exports[`render a card with dummy data 1`] = `
               ads
             </h6>
             <p
-              class="sc-gKclnd wRXud"
+              class="sc-gsFSXq crWHRf"
             >
               Company: 
               home
             </p>
           </div>
           <span
-            class="sc-iCfMLu ipwylU"
+            class="sc-kAyceB jkPlHY"
           >
             User
           </span>
