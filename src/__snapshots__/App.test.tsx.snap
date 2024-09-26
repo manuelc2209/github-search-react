@@ -6,27 +6,27 @@ exports[`Should render the app 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-iCfMLu ihZyvU"
+        class="sc-kAyceB KiZBI"
       >
         <header
-          class="sc-gKclnd cNFuJn"
+          class="sc-gsFSXq eCayQt"
         >
           <div>
             <div
-              class="sc-eCImPb hrwnFr"
+              class="sc-dcJsrY eGkkCl"
             >
               <h1>
                 Search for GitHub Users
               </h1>
               <input
-                class="sc-gsDKAQ bWlTSq sc-jRQBWg"
+                class="sc-gEvEer dMvuao sc-iGgWBj"
                 data-testid="StyledInput"
                 placeholder="Search a user or organization"
                 value=""
               />
             </div>
             <button
-              class="sc-bdvvtL fmDaez sc-dkPtRN ugLOt"
+              class="sc-aXZVg lnoqco sc-eqUAAy keFxNJ"
               data-testid="StyledButton"
             >
               Search
@@ -38,27 +38,27 @@ exports[`Should render the app 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-iCfMLu ihZyvU"
+      class="sc-kAyceB KiZBI"
     >
       <header
-        class="sc-gKclnd cNFuJn"
+        class="sc-gsFSXq eCayQt"
       >
         <div>
           <div
-            class="sc-eCImPb hrwnFr"
+            class="sc-dcJsrY eGkkCl"
           >
             <h1>
               Search for GitHub Users
             </h1>
             <input
-              class="sc-gsDKAQ bWlTSq sc-jRQBWg"
+              class="sc-gEvEer dMvuao sc-iGgWBj"
               data-testid="StyledInput"
               placeholder="Search a user or organization"
               value=""
             />
           </div>
           <button
-            class="sc-bdvvtL fmDaez sc-dkPtRN ugLOt"
+            class="sc-aXZVg lnoqco sc-eqUAAy keFxNJ"
             data-testid="StyledButton"
           >
             Search

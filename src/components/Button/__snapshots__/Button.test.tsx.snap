@@ -6,7 +6,7 @@ exports[`render an Button Component 1`] = `
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdvvtL fmDaez"
+        class="sc-aXZVg lnoqco"
         data-testid="StyledButton"
       >
         test
@@ -15,7 +15,7 @@ exports[`render an Button Component 1`] = `
   </body>,
   "container": <div>
     <button
-      class="sc-bdvvtL fmDaez"
+      class="sc-aXZVg lnoqco"
       data-testid="StyledButton"
     >
       test
@@ -81,7 +81,7 @@ exports[`render an Button with a custom value 1`] = `
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdvvtL fmDaez"
+        class="sc-aXZVg lnoqco"
         data-testid="StyledButton"
       >
         test
@@ -90,7 +90,7 @@ exports[`render an Button with a custom value 1`] = `
   </body>,
   "container": <div>
     <button
-      class="sc-bdvvtL fmDaez"
+      class="sc-aXZVg lnoqco"
       data-testid="StyledButton"
     >
       test
