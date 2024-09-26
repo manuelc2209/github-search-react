@@ -60,7 +60,7 @@ export const UIComponent: React.FC = () => {
     const findUser = (
         <StyledInputContainer>
             <h1>Search for GitHub Users</h1>
-            <StyledInput value={value} onChange={handleOnChange} onKeyPress={handleOnKeyPress}></StyledInput>
+            <StyledInput value={value} onChange={handleOnChange} onKeyDown={handleOnKeyPress}></StyledInput>
         </StyledInputContainer>
     );
 

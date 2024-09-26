@@ -14,7 +14,7 @@ exports[`render a card with dummy data 1`] = `
           >
             <img
               class="sc-aXZVg hOybyn"
-              src="https://avatars.githubusercontent.com/u/131052?v=4"
+              src="https://avatars.githubusercontent.com/u/12?v=4"
             />
             <div
               class="sc-iGgWBj gnmhnl"
@@ -62,7 +62,7 @@ exports[`render a card with dummy data 1`] = `
         >
           <img
             class="sc-aXZVg hOybyn"
-            src="https://avatars.githubusercontent.com/u/131052?v=4"
+            src="https://avatars.githubusercontent.com/u/12?v=4"
           />
           <div
             class="sc-iGgWBj gnmhnl"

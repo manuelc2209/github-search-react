@@ -5,7 +5,7 @@ const userData = {
     login: 'ads',
     id: 131052,
     node_id: '1313VXNlcjEzMTA1Mg==',
-    avatar_url: 'https://avatars.githubusercontent.com/u/131052?v=4',
+    avatar_url: 'https://avatars.githubusercontent.com/u/12?v=4',
     gravatar_id: '',
     url: 'https://api.github.com/users/ads',
     html_url: 'https://github.com/ads',

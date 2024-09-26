@@ -13,7 +13,7 @@ test('render an Input with a custom value', () => {
 
 test('render an Input with the keypress mocked callbacks', async () => {
     const mockedKeypressCb = vi.fn();
-    const view = render(<Input onKeyPress={mockedKeypressCb} />);
+    const view = render(<Input onKeyDown={mockedKeypressCb} />);
     const input = await screen.findByTestId('StyledInput');
     input.focus();
     fireEvent.keyPress(input, { key: 'a', code: 65, charCode: 65 });
