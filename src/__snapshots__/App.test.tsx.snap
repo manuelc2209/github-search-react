@@ -27,7 +27,7 @@ exports[`Should render the app 1`] = `
             </div>
             <button
               class="sc-aXZVg lnoqco sc-eqUAAy keFxNJ"
-              data-testid="StyledButton"
+              data-testid="btn-element"
             >
               Search
             </button>
@@ -59,7 +59,7 @@ exports[`Should render the app 1`] = `
           </div>
           <button
             class="sc-aXZVg lnoqco sc-eqUAAy keFxNJ"
-            data-testid="StyledButton"
+            data-testid="btn-element"
           >
             Search
           </button>
