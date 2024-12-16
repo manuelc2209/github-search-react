@@ -4,7 +4,7 @@
     "private": true,
     "type": "module",
     "dependencies": {
-        "nanoid": "^5.0.6",
+        "nanoid": "^5.0.9",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "react-router-dom": "6",
